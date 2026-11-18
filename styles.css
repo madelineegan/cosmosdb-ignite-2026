@@ -234,6 +234,18 @@ h2 {
   font: 600 .78rem/1.35 ui-monospace, SFMono-Regular, Consolas, monospace;
   overflow-wrap: anywhere;
 }
+.featured-link {
+  padding: 1.05rem 1.1rem;
+  border-color: #a9c7ea;
+  background: #eef6ff;
+  min-height: 108px;
+}
+.featured-link strong {
+  font-size: 1.2rem;
+}
+.featured-link code {
+  font-size: .84rem;
+}
 .quick-link:hover {
   border-color: #a9c7ea;
   box-shadow: 0 8px 18px rgba(20, 60, 109, .08);
