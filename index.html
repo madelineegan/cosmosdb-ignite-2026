@@ -43,21 +43,27 @@
 
   <main>
     <section class="quick-start" id="start" aria-labelledby="start-title">
-      <div>
+      <div class="section-heading compact">
         <p class="eyebrow dark">Start building</p>
-        <h2 id="start-title">Make your coding agent Cosmos DB-aware</h2>
-        <p>The open-source Azure Cosmos DB Agent Kit packages 130+ best-practice rules for data modeling, partition keys, queries, search, security, and operations.</p>
-        <div class="command" role="group" aria-label="Agent Kit installation command">
-          <code id="install-command">npx skills add AzureCosmosDB/cosmosdb-agent-kit</code>
-          <button type="button" id="copy-command" aria-describedby="copy-status">Copy</button>
-        </div>
-        <span class="sr-only" id="copy-status" role="status" aria-live="polite"></span>
+        <h2 id="start-title">Start with Agent Kit or Hosted MCP</h2>
       </div>
-      <a class="feature-link" href="https://github.com/AzureCosmosDB/cosmosdb-agent-kit">
-        <span class="feature-icon" aria-hidden="true">&lt;/&gt;</span>
-        <span><strong>Azure Cosmos DB Agent Kit</strong><small>Source, install options, and skills</small></span>
-        <span aria-hidden="true">↗</span>
-      </a>
+      <div class="start-grid">
+        <article class="start-card">
+          <h3>Agent Kit</h3>
+          <p>Install Cosmos DB rules for coding agents with a single command.</p>
+          <div class="command" role="group" aria-label="Agent Kit installation command">
+            <code id="install-command">npx skills add AzureCosmosDB/cosmosdb-agent-kit</code>
+            <button type="button" id="copy-command" aria-describedby="copy-status">Copy</button>
+          </div>
+          <span class="sr-only" id="copy-status" role="status" aria-live="polite"></span>
+          <a class="start-link" href="https://aka.ms/CosmosDBAgentKit">Open Agent Kit resources ↗</a>
+        </article>
+        <article class="start-card">
+          <h3>Hosted MCP server</h3>
+          <p>Connect agents to Azure Cosmos DB through a managed MCP experience.</p>
+          <a class="start-link" href="https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/hosted-mcp-server">Open Hosted MCP docs ↗</a>
+        </article>
+      </div>
     </section>
 
     <section class="learn-more" id="learn-more" aria-labelledby="learn-more-title">
@@ -66,11 +72,11 @@
         <h2 id="learn-more-title">All session links</h2>
       </div>
       <div class="learn-more-list">
-        <a class="quick-link featured-link" href="https://aka.ms/CosmosDBAgentKit">
+        <a class="quick-link" href="https://aka.ms/CosmosDBAgentKit">
           <strong>Cosmos DB Agent Kit</strong>
           <code>aka.ms/CosmosDBAgentKit</code>
         </a>
-        <a class="quick-link featured-link" href="https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/hosted-mcp-server">
+        <a class="quick-link" href="https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/hosted-mcp-server">
           <strong>Hosted MCP server (preview)</strong>
           <code>learn.microsoft.com/.../hosted-mcp-server</code>
         </a>
