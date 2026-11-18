@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Resources for Microsoft Ignite 2026 breakout BRK367: Designing the data layer for AI apps and agents with Azure Cosmos DB.">
+  <meta name="theme-color" content="#203864">
+  <meta property="og:title" content="BRK367 · Azure Cosmos DB resources">
+  <meta property="og:description" content="Remember deliberately. Act safely. Retrieve appropriately.">
+  <meta property="og:type" content="website">
+  <title>BRK367 · Azure Cosmos DB resources</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#resources">Skip to resources</a>
+
+  <header class="hero">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="BRK367 home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>Azure Cosmos DB</span>
+      </a>
+      <a class="nav-link" href="https://github.com/AzureCosmosDB/cosmosdb-agent-kit">Agent Kit on GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+
+    <div class="hero-content" id="top">
+      <p class="eyebrow">Microsoft Ignite 2026 · BRK367</p>
+      <h1>Designing the data layer for AI apps and agents with Azure Cosmos DB</h1>
+      <p class="lead">One place for the code, docs, and samples from the breakout.</p>
+      <p class="mantra" aria-label="Session themes">
+        <span>Remember deliberately.</span>
+        <span>Act safely.</span>
+        <span>Retrieve appropriately.</span>
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#start">Start with the Agent Kit</a>
+        <a class="button secondary" href="#resources">Explore all resources</a>
+      </div>
+    </div>
+    <div class="orb orb-one" aria-hidden="true"></div>
+    <div class="orb orb-two" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="quick-start" id="start" aria-labelledby="start-title">
+      <div>
+        <p class="eyebrow dark">Start building</p>
+        <h2 id="start-title">Make your coding agent Cosmos DB-aware</h2>
+        <p>The open-source Azure Cosmos DB Agent Kit packages 130+ best-practice rules for data modeling, partition keys, queries, search, security, and operations.</p>
+        <div class="command" role="group" aria-label="Agent Kit installation command">
+          <code id="install-command">npx skills add AzureCosmosDB/cosmosdb-agent-kit</code>
+          <button type="button" id="copy-command" aria-describedby="copy-status">Copy</button>
+        </div>
+        <span class="sr-only" id="copy-status" role="status" aria-live="polite"></span>
+      </div>
+      <a class="feature-link" href="https://github.com/AzureCosmosDB/cosmosdb-agent-kit">
+        <span class="feature-icon" aria-hidden="true">&lt;/&gt;</span>
+        <span><strong>Azure Cosmos DB Agent Kit</strong><small>Source, install options, and skills</small></span>
+        <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <section class="resources" id="resources" aria-labelledby="resources-title">
+      <div class="section-heading">
+        <p class="eyebrow dark">Breakout resources</p>
+        <h2 id="resources-title">Build around the three decisions</h2>
+        <p>Choose what the agent should remember, constrain what it can do, and match retrieval to the question.</p>
+      </div>
+
+      <div class="pillar-grid">
+        <article class="pillar remember">
+          <div class="pillar-number">01</div>
+          <h3>Remember deliberately</h3>
+          <p>Separate current context from durable memory, then give each its own lifecycle.</p>
+          <ul class="link-list">
+            <li><a href="https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agentic-memories"><span>Agent memory patterns</span><small>Model, partition, index, and retrieve memories</small></a></li>
+            <li><a href="https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-memory-toolkit"><span>Agent Memory Toolkit <em class="badge">Preview</em></span><small>Store turns and derive summaries, facts, and profiles</small></a></li>
+            <li><a href="https://learn.microsoft.com/en-us/azure/cosmos-db/ai-agents"><span>AI agents with Azure Cosmos DB</span><small>Architecture guidance and implementation options</small></a></li>
+          </ul>
+        </article>
+
+        <article class="pillar act">
+          <div class="pillar-number">02</div>
+          <h3>Act safely</h3>
+          <p>Put identity, permissions, validation, and auditability around agent access to data.</p>
+          <ul class="link-list">
+            <li><a href="https://github.com/AzureCosmosDB/cosmosdb-agent-kit"><span>Cosmos DB Agent Kit</span><small>Best practices for AI coding agents</small></a></li>
+            <li><a href="https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/hosted-mcp-server"><span>Hosted MCP server <em class="badge">Preview</em></span><small>Connect agents to Cosmos DB with managed access</small></a></li>
+            <li><a href="https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/agent-kit/overview"><span>Agent Kit documentation</span><small>Overview, quick start, and supported workflows</small></a></li>
+          </ul>
+        </article>
+
+        <article class="pillar retrieve">
+          <div class="pillar-number">03</div>
+          <h3>Retrieve appropriately</h3>
+          <p>Use structured queries, full-text, vector, or hybrid search based on what the question needs.</p>
+          <ul class="link-list">
+            <li><a href="https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/rag"><span>Retrieval-augmented generation</span><small>Ground AI responses in your data</small></a></li>
+            <li><a href="https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/full-text-search"><span>Full-text search</span><small>Keyword relevance with BM25 scoring</small></a></li>
+            <li><a href="https://learn.microsoft.com/en-us/azure/cosmos-db/vector-search"><span>Vector search</span><small>Semantic similarity in the operational store</small></a></li>
+            <li><a href="https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/hybrid-search"><span>Hybrid search</span><small>Combine vector and full-text results with RRF</small></a></li>
+            <li><a href="https://learn.microsoft.com/en-us/azure/cosmos-db/gen-ai/semantic-reranker"><span>Semantic reranker</span><small>Rescore candidates for stronger relevance</small></a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="explore" aria-labelledby="explore-title">
+      <div class="section-heading compact">
+        <p class="eyebrow dark">Keep exploring</p>
+        <h2 id="explore-title">Samples and end-to-end scenarios</h2>
+      </div>
+      <div class="explore-grid">
+        <a class="resource-card" href="https://aka.ms/AzureCosmosDB/Gallery">
+          <span class="card-kicker">Gallery</span>
+          <strong>Azure Cosmos DB sample gallery</strong>
+          <span>Patterns, code, demos, and learning resources</span>
+          <code>aka.ms/AzureCosmosDB/Gallery</code>
+        </a>
+        <a class="resource-card" href="https://aka.ms/CosmosFabricDocs">
+          <span class="card-kicker">Documentation</span>
+          <strong>Cosmos DB + Microsoft Fabric</strong>
+          <span>Product documentation for Cosmos DB in Azure and Fabric</span>
+          <code>aka.ms/CosmosFabricDocs</code>
+        </a>
+        <a class="resource-card" href="https://aka.ms/CosmosFabricSamples">
+          <span class="card-kicker">Samples</span>
+          <strong>Cosmos DB + Fabric samples</strong>
+          <span>Operational and analytical examples on GitHub</span>
+          <code>aka.ms/CosmosFabricSamples</code>
+        </a>
+        <a class="resource-card" href="https://github.com/AzureCosmosDB/cosmos-fabric-samples/blob/main/travel-multi-agent-analytics/README.md">
+          <span class="card-kicker">Multi-agent</span>
+          <strong>Multi-agent analytics</strong>
+          <span>Travel analytics scenario using Cosmos DB and Fabric</span>
+          <code>Open the public GitHub sample</code>
+        </a>
+      </div>
+    </section>
+
+    <section class="closing" aria-label="Session close">
+      <p>Remember deliberately.</p>
+      <p>Act safely.</p>
+      <p>Retrieve appropriately.</p>
+      <a href="#top">Back to top ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Resources for BRK367 · Microsoft Ignite 2026</p>
+    <p>Preview resources are labeled. This page contains only public documentation and public samples.</p>
+  </footer>
+
+  <script>
+    const button = document.getElementById('copy-command');
+    const command = document.getElementById('install-command');
+    const status = document.getElementById('copy-status');
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(command.textContent);
+        button.textContent = 'Copied';
+        status.textContent = 'Installation command copied.';
+        setTimeout(() => { button.textContent = 'Copy'; }, 1800);
+      } catch {
+        window.getSelection().selectAllChildren(command);
+        status.textContent = 'Command selected. Press Control+C or Command+C to copy.';
+      }
+    });
+  </script>
+</body>
+</html>
